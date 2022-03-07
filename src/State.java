@@ -11,9 +11,7 @@ public abstract class State {
 
     public abstract void status();
 
-    @Deprecated
-    public abstract void prev();
+    public abstract void prev(State state);
 
-    @Deprecated
-    public abstract void next();
+    public abstract void next(State state);
 }
