@@ -1,3 +1,6 @@
+/**
+ * Machine is idling
+ */
 public class ReadyState extends State {
     @Override
     public void status() {
