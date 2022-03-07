@@ -4,7 +4,7 @@
 public class ReadyState extends State {
     @Override
     public void status() {
-        System.out.println("Automate ready");
+        System.out.println("Automate ready.");
     }
 
     @Override
