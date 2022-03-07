@@ -1,12 +1,12 @@
-public class BereitState extends State {
+public class ReadyState extends State {
 
     @Override
-    public void addAutomate(Automat automate) {
+    public void addAutomat(Automat automate) {
 
     }
 
     @Override
-    public Automat getAutomate() {
+    public Automat getAutomat() {
         return null;
     }
 

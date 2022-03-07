@@ -1,12 +1,12 @@
-public class GetraenkeAusgabeState extends State{
+public class DrinksOutputState extends State {
 
     @Override
-    public void addAutomate(Automat automate) {
+    public void addAutomat(Automat automate) {
 
     }
 
     @Override
-    public Automat getAutomate() {
+    public Automat getAutomat() {
         return null;
     }
 
