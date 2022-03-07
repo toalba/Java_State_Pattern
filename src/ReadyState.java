@@ -10,6 +10,9 @@ public class ReadyState extends State {
     @Override
     public void prev() {
         System.out.println("I am the start-state.");
+        if(this.automate.getState() != this) {
+            this.automate.setState(this);
+        }
     }
 
     @Override
