@@ -8,12 +8,12 @@ public class ReadyState extends State {
     }
 
     @Override
-    public void prev() {
-
+    public void prev(State state) {
+        System.out.println("I am the start-state.");
     }
 
     @Override
-    public void next() {
+    public void next(State state) {
 
     }
 }

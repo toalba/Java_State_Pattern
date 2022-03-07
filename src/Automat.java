@@ -1,18 +1,11 @@
-import java.util.List;
-
 public class Automat {
-    private int currentState;
-    private List<State> states;
+    private State state;
 
-    public int getCurrentStateIndex() {
-        return currentState;
+    public State getStates() {
+        return this.state;
     }
 
-    public List<State> getStates() {
-        return states.subList(0, states.size());
-    }
-
-    public void addState(State s) {
-        states.add(s);
+    public void setState(State s) {
+        this.state = s;
     }
 }
