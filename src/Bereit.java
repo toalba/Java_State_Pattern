@@ -3,4 +3,14 @@ public class Bereit implements AutomatenStates {
     public void status() {
 
     }
+
+    @Override
+    public void prev() {
+
+    }
+
+    @Override
+    public void next() {
+
+    }
 }

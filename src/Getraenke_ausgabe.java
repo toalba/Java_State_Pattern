@@ -3,4 +3,14 @@ public class Getraenke_ausgabe implements AutomatenStates{
     public void status() {
 
     }
+
+    @Override
+    public void prev() {
+
+    }
+
+    @Override
+    public void next() {
+
+    }
 }
