@@ -1,15 +1,4 @@
 public class DrinksOutputState extends State {
-
-    @Override
-    public void addAutomat(Automat automate) {
-
-    }
-
-    @Override
-    public Automat getAutomat() {
-        return null;
-    }
-
     @Override
     public void status() {
 

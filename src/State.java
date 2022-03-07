@@ -1,9 +1,13 @@
 public abstract class State {
     Automat automate;
 
-    public abstract void addAutomat(Automat automate);
+    public void addAutomat(Automat automate){
+        this.automate = automate;
+    }
 
-    public abstract Automat getAutomat();
+    public Automat getAutomat(){
+        return this.automate;
+    }
 
     public abstract void status();
 
