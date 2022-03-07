@@ -1,4 +1,4 @@
-public class Bereit extends State {
+public class BereitState extends State {
 
     @Override
     public void addAutomate(Automat automate) {

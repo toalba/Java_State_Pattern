@@ -1,4 +1,4 @@
-public class Getraenke_ausgabe extends State{
+public class GetraenkeAusgabeState extends State{
 
     @Override
     public void addAutomate(Automat automate) {
