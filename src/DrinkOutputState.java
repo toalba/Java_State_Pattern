@@ -1,4 +1,4 @@
-public class DrinksOutputState extends State {
+public class DrinkOutputState extends State {
     @Override
     public void status() {
 
