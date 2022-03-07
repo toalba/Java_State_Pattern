@@ -1,4 +1,15 @@
-public class Bereit implements AutomatenStates {
+public class Bereit extends State {
+
+    @Override
+    public void addAutomate(Automat automate) {
+
+    }
+
+    @Override
+    public Automat getAutomate() {
+        return null;
+    }
+
     @Override
     public void status() {
 
