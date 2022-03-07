@@ -1,5 +1,6 @@
 public abstract class State {
-    AutomatenStates automate;
-    public abstract void addAutomate(AutomatenStates automate);
-    public abstract AutomatenStates getAutomate();
+    Automate automate;
+    public abstract void addAutomate(Automate automate);
+    public abstract Automate getAutomate();
+
 }
