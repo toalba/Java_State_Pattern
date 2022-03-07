@@ -1,7 +1,7 @@
 public class Automat {
     private State state;
 
-    public State getStates() {
+    public State getState() {
         return this.state;
     }
 
