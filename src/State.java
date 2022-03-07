@@ -11,7 +11,7 @@ public abstract class State {
 
     public abstract void status();
 
-    public abstract void prev(State state);
+    public abstract void prev();
 
-    public abstract void next(State state);
+    public abstract void next();
 }

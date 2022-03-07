@@ -8,12 +8,12 @@ public class ReadyState extends State {
     }
 
     @Override
-    public void prev(State state) {
+    public void prev() {
         System.out.println("I am the start-state.");
     }
 
     @Override
-    public void next(State state) {
-
+    public void next() {
+        this.automate.setState(new CoinInsertedState());
     }
 }
