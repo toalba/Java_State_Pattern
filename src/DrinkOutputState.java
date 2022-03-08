@@ -3,17 +3,17 @@
  */
 public class DrinkOutputState extends State {
     @Override
-    public void status() {
+    public void next(Automat automat) {
+        automat.setState(new ReadyState());
+    }
+
+    @Override
+    public void prev(Automat automat) {
+        automat.setState(new DrinkSelectionState());
+    }
+
+    @Override
+    public void printStatus() {
         System.out.println("Drink is coming.");
-    }
-
-    @Override
-    public void prev() {
-        this.automate.setState(new DrinkSelectionState());
-    }
-
-    @Override
-    public void next() {
-        this.automate.setState(new ReadyState());
     }
 }

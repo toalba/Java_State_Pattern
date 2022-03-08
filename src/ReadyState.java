@@ -3,20 +3,19 @@
  */
 public class ReadyState extends State {
     @Override
-    public void status() {
-        System.out.println("Automate ready.");
+    public void next(Automat automat) {
+        automat.setState(new CoinInsertedState());
     }
 
     @Override
-    public void prev() {
-        System.out.println("I am the start-state.");
-        if(this.automate.getState() != this) {
-            this.automate.setState(this);
+    public void prev(Automat automat) {
+        if (automat.getState() != this) {
+            automat.setState(this);
         }
     }
 
     @Override
-    public void next() {
-        this.automate.setState(new CoinInsertedState());
+    public void printStatus() {
+        System.out.println("I am the start-state.");
     }
 }

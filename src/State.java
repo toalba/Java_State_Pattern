@@ -1,17 +1,7 @@
 public abstract class State {
-    Automat automate;
+    public abstract void next(Automat automat);
 
-    public void addAutomat(Automat automate){
-        this.automate = automate;
-    }
+    public abstract void prev(Automat automat);
 
-    public Automat getAutomat(){
-        return this.automate;
-    }
-
-    public abstract void status();
-
-    public abstract void prev();
-
-    public abstract void next();
+    public abstract void printStatus();
 }

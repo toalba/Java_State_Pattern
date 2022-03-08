@@ -1,11 +1,25 @@
 public class Automat {
     private State state;
 
-    public State getState() {
+    public void setState(State state){
+        this.state = state;
+    }
+
+    public State getState(){
         return this.state;
     }
 
-    public void setState(State s) {
-        this.state = s;
+    public void previousState(){
+        state.prev(this);
     }
+
+    public void nextState(){
+        state.next(this);
+    }
+
+    public void printState(){
+        state.printStatus();
+    }
+
+
 }
