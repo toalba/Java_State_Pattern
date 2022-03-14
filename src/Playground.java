@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.sql.SQLOutput;
 
 /**
@@ -10,7 +11,7 @@ public class Playground {
         goForwardOneRound(automat);
     }
 
-    private static void goForwardOneRound(Automat automat) {
+    private static Automat goForwardOneRound(Automat automat) {
         int readyStateCounter = 0;
         while (0 <= readyStateCounter && readyStateCounter <= 1) {
             if (automat.getState().getClass() == ReadyState.class) {
@@ -19,6 +20,7 @@ public class Playground {
             automat.printState();
             automat.nextState();
         }
+        return automat;
     }
 
 
